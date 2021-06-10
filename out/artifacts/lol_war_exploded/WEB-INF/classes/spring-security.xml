@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/security
+		http://www.springframework.org/schema/security/spring-security.xsd
+http://www.springframework.org/schema/security ">
+    <!--不拦截的内容 登录页面 错误页面-->
+    <security:http pattern="/login.jsp" security="none"/>
+    <security:http pattern="/failer.jsp" security="none"/>
+    <security:http pattern="/css/**" security="none"/>
+    <security:http pattern="/img/**" security="none"/>
+    <security:http pattern="/plugins/**" security="none"/>
+    <!--配置拦截的规则
+    auto-config 使用自带页面
+    use-expressions 是否使用spel表达式
+    -->
+    <security:http auto-config="true" use-expressions="false">
+        <!--配置:拦截地址-->
+        <security:intercept-url pattern="/**" access="ROLE_USER"/>
+        <!--配置你想跳转的具体页面-->
+        <security:form-login
+                login-page="/login.jsp"
+                login-processing-url="/login.do"
+                default-target-url="/index.jsp"
+                authentication-failure-url="/failer.jsp"
+                authentication-success-forward-url="/pages/main.jsp" />
+        <!--是否允许跨域-->
+        <security:csrf disabled="true"/>
+        <!--退出-->
+        <security:logout invalidate-session="true" logout-url="/logout"
+                         logout-success-url="/login.html"></security:logout>
+    </security:http>
+    <!--配置登录认证管理器-->
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:user-service>
+                <!--临时账户密码  不加密-->
+                <security:user name="admin" password="{noop}admin" authorities="ROLE_USER"></security:user>
+            </security:user-service>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+</beans>

@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="1 Spring AOP">
+    <CLASSES>
+      <root url="file://E:/类库/1 Spring AOP" />
+      <root url="file://E:/类库/1 Spring JDBC和事务" />
+      <root url="file://E:/类库/1 Spring核心" />
+      <root url="file://E:/类库/2 MyBatis" />
+      <root url="file://E:/类库/2 SpringMVC" />
+      <root url="file://E:/类库/3 MyBatis-Spring整合" />
+      <root url="file://E:/类库/4 数据源" />
+      <root url="file://E:/类库/5 commons-logging" />
+      <root url="file://E:/类库/6 JSTL" />
+      <root url="file://E:/类库/7 JSON" />
+      <root url="file://E:/类库/8 文件上传" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://E:/类库/1 Spring AOP" recursive="false" />
+    <jarDirectory url="file://E:/类库/1 Spring JDBC和事务" recursive="false" />
+    <jarDirectory url="file://E:/类库/1 Spring核心" recursive="false" />
+    <jarDirectory url="file://E:/类库/2 MyBatis" recursive="false" />
+    <jarDirectory url="file://E:/类库/2 SpringMVC" recursive="false" />
+    <jarDirectory url="file://E:/类库/3 MyBatis-Spring整合" recursive="false" />
+    <jarDirectory url="file://E:/类库/4 数据源" recursive="false" />
+    <jarDirectory url="file://E:/类库/5 commons-logging" recursive="false" />
+    <jarDirectory url="file://E:/类库/6 JSTL" recursive="false" />
+    <jarDirectory url="file://E:/类库/7 JSON" recursive="false" />
+    <jarDirectory url="file://E:/类库/8 文件上传" recursive="false" />
+  </library>
+</component>

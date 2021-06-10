@@ -1,0 +1,50 @@
+<component name="libraryTable">
+  <library name="spring-security-acl-4.2.8.RELEASE-javadoc">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-acl-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-aspects-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-cas-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-config-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-core-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-crypto-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-data-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-ldap-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-messaging-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-openid-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-remoting-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-taglibs-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-test-4.2.8.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-web-4.2.8.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-acl-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-cas-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-config-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-core-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-crypto-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-data-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-ldap-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-messaging-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-openid-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-remoting-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-taglibs-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-test-4.2.8.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-web-4.2.8.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-acl-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-cas-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-config-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-core-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-crypto-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-data-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-ldap-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-messaging-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-openid-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-remoting-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-taglibs-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-test-4.2.8.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/spring-security-4.2.8.RELEASE/dist/spring-security-web-4.2.8.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

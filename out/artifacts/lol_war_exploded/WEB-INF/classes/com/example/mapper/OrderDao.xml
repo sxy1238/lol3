@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.OrderDao">
+  <resultMap id="BaseResultMap" type="com.example.model.Order">
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="orderid" jdbcType="INTEGER" property="orderid" />
+    <result column="money" jdbcType="VARCHAR" property="money" />
+    <result column="time" jdbcType="VARCHAR" property="time" />
+    <result column="condition" jdbcType="VARCHAR" property="condition" />
+  </resultMap>
+  <sql id="Base_Column_List">
+   orderid,userid,count, money, time, condition
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from `order`
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </select>
+  <select id="showOrder" resultType="Order">
+    select * from `order`
+  </select>
+  <select id="showOrder2" resultType="Order" parameterType="String">
+    select * from `order` where userid=#{userid}
+  </select>
+  <select id="searchBy" resultType="Order" parameterType="com.example.model.Order">
+    select * from `order` where 1=1
+    <if test="userid != null and userid !=''">
+      and userid=#{userid,jdbcType=VARCHAR}
+    </if>
+
+    <if test="money != null and money !=''">
+      and money = #{money,jdbcType=VARCHAR}
+    </if>
+
+    <if test="time != null and time !=''">
+      and `time` = #{time,jdbcType=VARCHAR}
+    </if>
+    <if test="condition != null and condition !=''">
+      and `condition`=#{condition,jdbcType=VARCHAR}
+    </if>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from `order`
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.model.Order">
+    <selectKey keyProperty="orderid" resultType="java.lang.Integer" order="AFTER">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into `order` (userid,money,`time`,`condition`)
+    values (#{userid},#{money}, #{time}, #{condition} )
+  </insert>
+  <insert id="insert2" parameterType="com.example.model.Order">
+    insert into `order` (userid,money,`time`,`condition`)
+    values (#{userid,jdbcType=VARCHAR},#{money,jdbcType=VARCHAR}, #{time,jdbcType=VARCHAR}, #{condition,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.model.Order">
+    insert into `order`
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+
+      <if test="userid != null">
+        userid,
+      </if>
+
+      <if test="money != null">
+        money,
+      </if>
+      <if test="time != null">
+        time,
+      </if>
+      <if test="condition != null">
+        condition,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+
+      <if test="money != null">
+        #{money,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=VARCHAR},
+      </if>
+      <if test="condition != null">
+        #{condition,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.model.Order">
+    update `order`
+    <set>
+      <if test="userid != null">
+        userid = #{userid,jdbcType=VARCHAR},
+      </if>
+
+      <if test="money != null">
+        money = #{money,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        time = #{time,jdbcType=VARCHAR},
+      </if>
+      <if test="condition != null">
+        condition = #{condition,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.model.Order">
+    update `order`
+    set money = #{money,jdbcType=VARCHAR},
+      `time` = #{time,jdbcType=VARCHAR},
+      `condition` = #{condition,jdbcType=VARCHAR}
+    where userid = #{userid,jdbcType=VARCHAR}
+  </update>
+  <update id="zhifu" parameterType="Integer">
+    update `order`
+    set `condition` = '已付款'
+    where orderid = #{orderid}
+  </update>
+</mapper>
